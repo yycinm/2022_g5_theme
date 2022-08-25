@@ -49,6 +49,8 @@ if($config['cf_add_meta'])
     echo $config['cf_add_meta'].PHP_EOL;
 ?>
 <title><?php echo $g5_head_title; ?></title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/css/bootstrap-grid.min.css" integrity="sha512-8zKdCtHHn4yrmrAKteDmaIVUMppsWMTlaZCffpRG6k6sVHwWQ2kiJOFQ22e7dSPc7yYD/GC5onkJCfxemQsyeQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/js/bootstrap.min.js" integrity="sha512-8Y8eGK92dzouwpROIppwr+0kPauu0qqtnzZZNEF8Pat5tuRNJxJXCkbQfJ0HlUG3y1HB3z18CSKmUo7i2zcPpg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <?php
 $shop_css = '';
 if (defined('_SHOP_')) $shop_css = '_shop';

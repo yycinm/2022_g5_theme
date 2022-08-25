@@ -7,7 +7,23 @@ add_stylesheet('<link rel="stylesheet" href="'.$latest_skin_url.'/style.css">', 
 $thumb_width = 210;
 $thumb_height = 150;
 ?>
+ <div class="imgWrap">
+ <?php
+    for ($i=0; $i<count($list); $i++) {
 
+        $thumb = get_list_thumbnail($bo_table, $list[$i]['wr_id'], $thumb_width, $thumb_height, false, true);
+
+    if($thumb['src']) {
+        $img = $thumb['src'];
+    } else {
+        $img = G5_IMG_URL.'/no_img.png';
+        $thumb['alt'] = '이미지가 없습니다.';
+    }
+    $img_content = '<img src="'.$img.'" alt="'.$thumb['alt'].'" >';
+?>
+        
+       <?} ?>
+    </div>
 <div class="pic_lt">
     <h2 class="lat_title"><a href="<?php echo get_pretty_url($bo_table); ?>"><?php echo $bo_subject ?></a></h2>
     <ul>

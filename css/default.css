@@ -48,7 +48,7 @@ border:1px solid #558ab7 !important;
 #hd, #wrapper, #ft {min-width:1200px}
 
 #hd_pop,
-#hd_wrapper,
+
 #tnb .inner,
 #container_wr,
 #ft_wr {width:1200px}
@@ -67,17 +67,19 @@ border:1px solid #558ab7 !important;
 
 /* 상단 레이아웃 */
 #hd {padding: 10px 0;}
+
 #hd_h1 {position:absolute;font-size:0;line-height:0;overflow:hidden}
 
 
 #tnb {border-bottom:1px solid #383838;margin:0 auto}
+#hd_wrapper:hover{background: #fff;z-index: 999;width: 100%;}
 #tnb:after {display:block;visibility:hidden;clear:both;content:""}
 #tnb .inner {margin:0 auto}
 
 #hd_wrapper {position:relative;margin:0 auto;zoom:1}
 #hd_wrapper:after {display:block;visibility:hidden;clear:both;content:""}
 
-#logo {float:left;padding:10px 0}
+#logo {float:left;z-index: 1000;padding:20px 20px 20px 100px;margin-top: -10px;}
 
 .hd_sch_wr {float:left;padding:30px 0;width:445px;margin-left:65px}
 #hd_sch h3 {position:absolute;font-size:0;line-height:0;overflow:hidden}
@@ -90,7 +92,7 @@ border:1px solid #558ab7 !important;
 #hd_define li {float:left;font-size:1.083em;line-height:14px;border-right:1px solid #4a4a4a;position:relative;text-align:center;margin:15px 10px 15px 0;padding-right:10px}
 #hd_define li:last-child {padding-right:0;margin-right:0;border-right:0}
 #hd_define li a {display:inline-block;color:#919191}
-#hd_define li.active a {color:#fff}
+#hd_define li.active a {color:#fff;}
 
 
 #hd_qnb {float:right;text-align:right}
@@ -105,7 +107,7 @@ border:1px solid #558ab7 !important;
 .hd_login {position:absolute;right:0;top:60px}
 .hd_login li {float:left;margin:0 5px;border-left:1px solid #616161;padding-left:10px;line-height:13px}
 .hd_login li:first-child {border-left:0}
-.hd_login a {color:#fff}
+.hd_login a {color:#fff;}
 
 
 #hd_wrapper{display: flex;justify-content: space-between;}
@@ -117,8 +119,8 @@ border:1px solid #558ab7 !important;
 #gnb_1dul{display: flex;height: 100%;}
 #gnb_1dul>li{height: 100%;}
 #gnb_1dul>li>a{
-  padding: 0 20px;display: flex;justify-content: center;align-items: center;height: 100%;font-weight: bold;
-  font-size: 1.2em;
+  padding: 0 50px;display: flex;justify-content: center;align-items: center;height: 100%;font-weight: bold;
+  font-size: 1.5em;
 }
 
 
@@ -135,7 +137,6 @@ border:1px solid #558ab7 !important;
   position:relative;min-height:500px;
   height:auto !important;
   font-size:1em;width:100%;zoom:1;
-  padding: 30px 20px;
 }
 #container_title {
   font-size:1.333em;margin:0 auto;font-weight:bold;

@@ -34,7 +34,7 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
     <div id="hd_wrapper">
 
         <div id="logo">
-            <a href="<?php echo G5_URL ?>"><img src="<?php echo G5_THEME_BASIC_IMG_URL ?>/logo.svg" alt="<?php echo $config['cf_title']; ?>"></a>
+            <a href="<?php echo G5_URL ?>"><img src="<?php echo G5_THEME_IMG_URL ?>/logo_ori.svg" alt="<?php echo $config['cf_title']; ?>"></a>
         </div>
 	
 		<nav id="gnb">
